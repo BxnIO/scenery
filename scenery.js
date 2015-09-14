@@ -12,52 +12,5 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// Top-level classes
-var Template = require('./lib/Template.js');
-var Parameter = require('./lib/Parameter.js');
-var Resource = require('./lib/Resource.js');
-
-// EC2 Resources
-var Instance = require('./lib/EC2/Instance.js');
-var InternetGateway = require('./lib/EC2/InternetGateway.js');
-var SecurityGroup = require('./lib/EC2/SecurityGroup.js');
-var Subnet = require('./lib/EC2/Subnet.js');
-var VPC = require('./lib/EC2/VPC.js');
-var VPCGatewayAttachment = require('./lib/EC2/VPCGatewayAttachment.js');
-
-// IAM Resources
-var InstanceProfile = require('./lib/IAM/InstanceProfile.js');
-var Policy = require('./lib/IAM/Policy.js');
-var Role = require('./lib/IAM/Role.js');
-
-// Autoscaling Resources
-var AutoScalingGroup = require('./lib/AutoScaling/AutoScalingGroup.js');
-var LaunchConfiguration = require('./lib/AutoScaling/LaunchConfiguration.js');
-
-// Other Resources
-var ElastiCacheCluster = require('./lib/ElastiCache/CacheCluster.js');
-var LoadBalancer = require('./lib/ElasticLoadBalancing/LoadBalancer.js');
-var Validator = require('./lib/Validator.js');
-
-// TODO: Dynamically register all objects
-var Scenery = {
-    AutoScalingGroup: AutoScalingGroup,
-    ElastiCacheCluster: ElastiCacheCluster,
-    Instance: Instance,
-    InstanceProfile: InstanceProfile,
-    InternetGateway: InternetGateway,
-    LaunchConfiguration: LaunchConfiguration,
-    LoadBalancer: LoadBalancer,
-    Parameter: Parameter,
-    Policy: Policy,
-    Resource: Resource,
-    Role: Role,
-    SecurityGroup: SecurityGroup,
-    Subnet: Subnet,
-    Template: Template,
-    Validator: Validator,
-    VPC: VPC,
-    VPCGatewayAttachment: VPCGatewayAttachment
-};
-
+var Scenery = require('./lib');
 module.exports = Scenery;
