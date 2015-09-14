@@ -6,7 +6,10 @@
   "scripts": {
     "test": "grunt nodeunit"
   },
-  "repository": "https://github.com/OpenWhere/scenery_generator.git",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/BxnIO/scenery.git"
+  },
   "keywords": [
     "AWS",
     "CloudFormation",
@@ -21,7 +24,7 @@
     "aws-sdk": "2.1.26",
     "lodash": "3.7.0",
     "modelo": "4.1.2",
-    "requireindex": "^1.1.0",
+    "requireindex": "1.1.0",
     "walk": "2.3.4"
   },
   "devDependencies": {
