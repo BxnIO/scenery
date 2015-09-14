@@ -15,7 +15,7 @@
     "Web",
     "Services"
   ],
-  "authors": ["OpenWhere, Inc.", "Edward Ritter <ed@bxn.io>"]
+  "authors": ["OpenWhere, Inc.", "Edward Ritter <ed@bxn.io>"],
   "dependencies": {
     "async": "0.9.0",
     "aws-sdk": "2.1.26",
